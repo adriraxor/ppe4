@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a861493-92fa-4252-9e92-4a456de6c3c6" name="Default Changelist" comment="" />
+    <list default="true" id="6a861493-92fa-4252-9e92-4a456de6c3c6" name="Default Changelist" comment="FCommit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +10,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -132,6 +135,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ovn2G5AyibIfVbjv3NXO1Qf7Od" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -139,7 +143,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -157,21 +161,42 @@
       <updated>1614175722726</updated>
       <workItem from="1614175724132" duration="4308000" />
       <workItem from="1614687374239" duration="2693000" />
+      <workItem from="1614696662842" duration="278000" />
     </task>
+    <task id="LOCAL-00001" summary="FirstCommit">
+      <created>1614696794747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614696794747</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FirstCommit" />
+    <option name="LAST_COMMIT_MESSAGE" value="FirstCommit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="97" width="1062" height="896" key="DirDiffDialog" timestamp="1614693736211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="471" y="97" width="1062" height="896" key="DirDiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614693736211" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1614696510580">
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1614696715912">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1614696510580" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1614696715912" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1614696916087">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614696916087" />
+    <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614696873434">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614696873434" />
     <state x="830" y="432" key="publish.login" timestamp="1614687547336">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
