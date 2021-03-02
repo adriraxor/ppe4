@@ -1,0 +1,100 @@
+{% extends 'admin.base.twig' %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href=" {{ path('accueil') }}">Page d'accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=" {{ path('produit_index') }}">Voir les produits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('panier') }}">Mon panier</a>
+                </li>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Espace administrateur</a>
+                    </li>
+                {% endif %}
+                {% if is_granted('ROLE_AGENT') %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Espace agent</a>
+                    </li>
+                {% endif %}
+                {% if is_granted('ROLE_USER') %}
+                    {% if app.user %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Espace client</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+                {% if is_granted('ROLE_USER') %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('app_logout') }}">Se déconnecter</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href=" {{ path('app_login') }}">Authentification</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="container-tableau-produits">
+        <table class="table" id="test">
+            <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Id du produit</th>
+                <th scope="col">Nom du produit</th>
+                <th scope="col">Libelle du produit</th>
+                <th scope="col">Tarif du produit</th>
+                <th scope="col">Stock du produit</th>
+                <th scope="col">Popularité du produit</th>
+                <th scope="col">Date d'apparition du produit</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for produit in produits %}
+            <tr>
+                <td>{{ produit.image }}</td>
+                <td>{{ produit.idproduit }}</td>
+                <td>{{ produit.nomProduit }}</td>
+                <td>{{ produit.libelle }}</td>
+                <td>{{ produit.tarifProduit }}</td>
+                <td>{{ produit.stock }}</td>
+                <td>{{ produit.popularite }}</td>
+                <td>{{ produit.DateApparition|date('d/m/Y à H:m:s') }}</td>
+                <td><a href="{{ path('produit_edit', {'idproduit': produit.idproduit}) }}"
+                       class="btn btn-dark">Modifier</a></td>
+                <td>
+                    <form method="post" action="{{ path('produit_delete', {'idproduit': produit.idproduit}) }}"
+                          onsubmit="return confirm('Etes vous sûr de vouloir supprimer le produit?');">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="hidden" name="_token"
+                               value="{{ csrf_token('delete' ~ produit.idproduit) }}">
+                        <button class="btn btn-danger">Supprimer</button>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="panel-right">
+        <div class="row">
+            <a href="{{ path('produit_new') }}" class="btn btn-warning">Créer un nouveau produit</a>
+        </div>
+    </div>
+
+
+{% endblock %}

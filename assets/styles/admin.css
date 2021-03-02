@@ -1,0 +1,14 @@
+body{
+    overflow: hidden;
+}
+#container-tableau-produits {
+    overflow: scroll;
+    position: absolute;
+    height: 90%;
+}
+
+.panel-right {
+    float: right;
+    margin-top: 5%;
+    margin-right: 15%;
+}

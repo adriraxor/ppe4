@@ -1,0 +1,38 @@
+.btn {
+    height: 37px;
+    width: 34%;
+    margin-top: 5%;
+    margin-left: 29.9%;
+}
+
+h1.h3.mb-3.font-weight-normal {
+    margin-left: 30%;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 0rem 2rem;
+    font-size: 1.05rem;
+}
+
+input#inputEmail {
+    width: 34%;
+    margin-left: 29.9%;
+    margin-bottom: 2%;
+}
+
+input#inputPassword {
+    width: 34%;
+    margin-left: 29.9%;
+}
+label {
+    margin-left: 29.9%;
+}
+
+#inscription_link {
+    color: #797979;
+    padding-top: 5px;
+}

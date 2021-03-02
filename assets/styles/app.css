@@ -1,0 +1,89 @@
+body {
+    overflow: hidden;
+}
+
+.container-top {
+    background: #00000052;
+    color: #5a5a5a;
+}
+
+.col-md-4 {
+    max-width: 23.333333%;
+}
+
+#news {
+    border: 1px solid black;
+    position: absolute;
+    margin-top: -42px;
+    padding-top: 30px;
+    padding-bottom: 2%;
+    text-align: center;
+    background-color: currentcolor;
+    overflow: auto;
+    height: 100%;
+}
+
+h4 {
+    color: #848484;
+}
+
+.container {
+    max-width: 310px;
+}
+
+.h3, h3 {
+    font-size: 1.75rem;
+    margin-left: 35%;
+}
+
+.col-md-4 {
+    max-width: 129.333333%;
+}
+
+
+
+/**
+ * Webkit customisé pour scrollbar en axe Y
+ */
+
+::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
