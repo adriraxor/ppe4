@@ -163,4 +163,16 @@ class Produit
         return $this;
     }
 
+    public function getIdCategorie(): ?Categorie
+    {
+        return $this->id_categorie;
+    }
+
+    public function setIdCategorie(?Categorie $id_categorie): self
+    {
+        $this->id_categorie = $id_categorie;
+
+        return $this;
+    }
+
 }

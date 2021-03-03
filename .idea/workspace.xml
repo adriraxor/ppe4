@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a861493-92fa-4252-9e92-4a456de6c3c6" name="Default Changelist" comment="FCommit" />
+    <list default="true" id="6a861493-92fa-4252-9e92-4a456de6c3c6" name="Default Changelist" comment="FCommit">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Produit.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,6 +175,9 @@
       <workItem from="1614175724132" duration="4308000" />
       <workItem from="1614687374239" duration="2693000" />
       <workItem from="1614696662842" duration="278000" />
+      <workItem from="1614696959227" duration="2652000" />
+      <workItem from="1614773603984" duration="30000" />
+      <workItem from="1614773744499" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="FirstCommit">
       <created>1614696794747</created>
@@ -170,33 +186,53 @@
       <option name="project" value="LOCAL" />
       <updated>1614696794747</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FCommit">
+      <created>1614697187718</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614697187718</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FirstCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="FirstCommit" />
+    <MESSAGE value="FCommit" />
+    <option name="LAST_COMMIT_MESSAGE" value="FCommit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="471" y="97" width="1062" height="896" key="DirDiffDialog" timestamp="1614693736211">
+    <state x="471" y="97" width="1062" height="896" key="DirDiffDialog" timestamp="1614698834314">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="471" y="97" width="1062" height="896" key="DirDiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614693736211" />
+    <state x="471" y="97" width="1062" height="896" key="DirDiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614698834314" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1614696715912">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1614696715912" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1614696916087">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1614697231791">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614696916087" />
-    <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614696873434">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614697231791" />
+    <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614697082061">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614696873434" />
+    <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614697082061" />
     <state x="830" y="432" key="publish.login" timestamp="1614687547336">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
