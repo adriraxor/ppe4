@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Facture
  *
  * @ORM\Table(name="facture")
- * @ORM\Entity(repositoryClass="App\Repository\FactureRepository")
+ * @ORM\Entity
  */
 class Facture
 {
@@ -42,46 +42,19 @@ class Facture
      */
     private $facturePdf;
 
-    public function getIdFacture(): ?int
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="Vente", mappedBy="idFacture")
+     */
+    private $idvente;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
     {
-        return $this->idFacture;
+        $this->idvente = new \Doctrine\Common\Collections\ArrayCollection();
     }
-
-    public function getNumeroFacture(): ?string
-    {
-        return $this->numeroFacture;
-    }
-
-    public function setNumeroFacture(?string $numeroFacture): self
-    {
-        $this->numeroFacture = $numeroFacture;
-
-        return $this;
-    }
-
-    public function getMontantFacture(): ?int
-    {
-        return $this->montantFacture;
-    }
-
-    public function setMontantFacture(int $montantFacture): self
-    {
-        $this->montantFacture = $montantFacture;
-
-        return $this;
-    }
-
-    public function getFacturePdf()
-    {
-        return $this->facturePdf;
-    }
-
-    public function setFacturePdf($facturePdf): self
-    {
-        $this->facturePdf = $facturePdf;
-
-        return $this;
-    }
-
 
 }

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Vente
  *
  * @ORM\Table(name="vente")
- * @ORM\Entity(repositoryClass="App\Repository\VenteRepository")
+ * @ORM\Entity
  */
 class Vente
 {
@@ -35,34 +35,43 @@ class Vente
      */
     private $dateVente;
 
-    public function getIdvente(): ?int
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="Produit", mappedBy="idvente")
+     */
+    private $idproduit;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="Facture", inversedBy="idvente")
+     * @ORM\JoinTable(name="creer",
+     *   joinColumns={
+     *     @ORM\JoinColumn(name="idVente", referencedColumnName="idVente")
+     *   },
+     *   inverseJoinColumns={
+     *     @ORM\JoinColumn(name="Id_Facture", referencedColumnName="Id_Facture")
+     *   }
+     * )
+     */
+    private $idFacture;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="Personnel", mappedBy="idvente")
+     */
+    private $idPersonnel;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
     {
-        return $this->idvente;
+        $this->idproduit = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->idFacture = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->idPersonnel = new \Doctrine\Common\Collections\ArrayCollection();
     }
-
-    public function getNumeroCommande(): ?string
-    {
-        return $this->numeroCommande;
-    }
-
-    public function setNumeroCommande(?string $numeroCommande): self
-    {
-        $this->numeroCommande = $numeroCommande;
-
-        return $this;
-    }
-
-    public function getDateVente(): ?\DateTimeInterface
-    {
-        return $this->dateVente;
-    }
-
-    public function setDateVente(?\DateTimeInterface $dateVente): self
-    {
-        $this->dateVente = $dateVente;
-
-        return $this;
-    }
-
 
 }

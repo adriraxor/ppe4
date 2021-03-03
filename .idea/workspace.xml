@@ -10,10 +10,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a861493-92fa-4252-9e92-4a456de6c3c6" name="Default Changelist" comment="FCommit">
+    <list default="true" id="6a861493-92fa-4252-9e92-4a456de6c3c6" name="Default Changelist" comment="Commit update 2">
+      <change afterPath="$PROJECT_DIR$/assets/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/mk8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/produits.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/produits.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/mk8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Agent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Appartenir.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Appartenir.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Effectuer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Effectuer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Facture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Facture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Vente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Vente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/Accueil.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AgentRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ClientRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProduitRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProduitRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormulaireAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormulaireAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/produit/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/produit/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +173,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ovn2G5AyibIfVbjv3NXO1Qf7Od" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -156,11 +183,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ppe4-project\public\images" />
+      <recent name="D:\ppe4-project\public" />
+      <recent name="D:\ppe4-project\assets\images" />
+      <recent name="D:\ppe4-project\src\DataFixtures" />
+      <recent name="D:\ppe4-project\src\Controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ppe4-project\assets" />
       <recent name="D:\ppe4-project\templates" />
     </key>
   </component>
@@ -177,7 +212,7 @@
       <workItem from="1614696662842" duration="278000" />
       <workItem from="1614696959227" duration="2652000" />
       <workItem from="1614773603984" duration="30000" />
-      <workItem from="1614773744499" duration="43000" />
+      <workItem from="1614773744499" duration="10187000" />
     </task>
     <task id="LOCAL-00001" summary="FirstCommit">
       <created>1614696794747</created>
@@ -193,7 +228,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614697187718</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit update 2">
+      <created>1614773975665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614773975665</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit update 2">
+      <created>1614773984546</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614773984546</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,21 +263,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FirstCommit" />
     <MESSAGE value="FCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="FCommit" />
+    <MESSAGE value="Commit update 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit update 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="471" y="97" width="1062" height="896" key="DirDiffDialog" timestamp="1614698834314">
+    <state x="607" y="215" width="1278" height="724" key="DirDiffDialog" timestamp="1614780001622">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="471" y="97" width="1062" height="896" key="DirDiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614698834314" />
+    <state x="607" y="215" width="1278" height="724" key="DirDiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614780001622" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1614696715912">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1614696715912" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1614697231791">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1614774001169">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614697231791" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614774001169" />
     <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614697082061">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

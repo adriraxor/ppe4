@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Profil
  *
  * @ORM\Table(name="profil")
- * @ORM\Entity(repositoryClass="App\Repository\ProfilRepository")
+ * @ORM\Entity
  */
 class Profil
 {
@@ -54,72 +54,7 @@ class Profil
      *
      * @ORM\Column(name="permission", type="integer", nullable=false)
      */
-    private $permission = '0';
-
-    public function getIdprofil(): ?int
-    {
-        return $this->idprofil;
-    }
-
-    public function getUsername(): ?string
-    {
-        return $this->username;
-    }
-
-    public function setUsername(?string $username): self
-    {
-        $this->username = $username;
-
-        return $this;
-    }
-
-    public function getPassword(): ?string
-    {
-        return $this->password;
-    }
-
-    public function setPassword(?string $password): self
-    {
-        $this->password = $password;
-
-        return $this;
-    }
-
-    public function getNumTelephone(): ?string
-    {
-        return $this->numTelephone;
-    }
-
-    public function setNumTelephone(?string $numTelephone): self
-    {
-        $this->numTelephone = $numTelephone;
-
-        return $this;
-    }
-
-    public function getEmail(): ?string
-    {
-        return $this->email;
-    }
-
-    public function setEmail(?string $email): self
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    public function getPermission(): ?int
-    {
-        return $this->permission;
-    }
-
-    public function setPermission(int $permission): self
-    {
-        $this->permission = $permission;
-
-        return $this;
-    }
+    private $permission;
 
 
 }

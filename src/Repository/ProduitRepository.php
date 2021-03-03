@@ -36,7 +36,7 @@ class ProduitRepository extends ServiceEntityRepository
      */
     public function findAllRecentProduct(){
         return $this->createQueryBuilder("p")
-            ->orderBy('p.Date_Apparition', 'DESC')
+            ->orderBy('p.dateApparition', 'DESC')
             ->setMaxResults(5)
             ->getQuery()
             ->getResult();

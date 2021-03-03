@@ -2,17 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\ProductRepository;
 use Doctrine\ORM\Mapping as ORM;
-use Cocur\Slugify\Slugify;
-use http\Env\Response;
-use PhpParser\Node\Scalar\String_;
 
 /**
  * Produit
  *
  * @ORM\Table(name="produit")
- * @ORM\Entity(repositoryClass="App\Repository\ProduitRepository")
+ * @ORM\Entity
  */
 class Produit
 {
@@ -68,111 +64,33 @@ class Produit
     private $popularite;
 
     /**
-     * @ORM\Column(type="datetime", nullable=true)
+     * @var \DateTime|null
+     *
+     * @ORM\Column(name="date_apparition", type="datetime", nullable=true)
      */
-    private $Date_Apparition;
+    private $dateApparition;
 
-    public function getIdproduit(): ?int
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="Vente", inversedBy="idproduit")
+     * @ORM\JoinTable(name="contenir",
+     *   joinColumns={
+     *     @ORM\JoinColumn(name="idProduit", referencedColumnName="idProduit")
+     *   },
+     *   inverseJoinColumns={
+     *     @ORM\JoinColumn(name="idVente", referencedColumnName="idVente")
+     *   }
+     * )
+     */
+    private $idvente;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
     {
-        return $this->idproduit;
-    }
-
-    public function getNomProduit(): ?string
-    {
-        return $this->nomProduit;
-    }
-
-    public function setNomProduit(?string $nomProduit): self
-    {
-        $this->nomProduit = $nomProduit;
-
-        return $this;
-    }
-
-    public function getTarifProduit(): ?int
-    {
-        return $this->tarifProduit;
-    }
-
-    public function setTarifProduit(?int $tarifProduit): self
-    {
-        $this->tarifProduit = $tarifProduit;
-
-        return $this;
-    }
-
-    public function getStock(): ?int
-    {
-        return $this->stock;
-    }
-
-    public function setStock(?int $stock): self
-    {
-        $this->stock = $stock;
-
-        return $this;
-    }
-
-    public function getLibelle(): ?string
-    {
-        return $this->libelle;
-    }
-
-    public function setLibelle(?string $libelle): self
-    {
-        $this->libelle = $libelle;
-
-        return $this;
-    }
-
-    public function getImage(): ?string
-    {
-        return $this->image;
-    }
-
-    public function setImage(?string $image): self
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    public function getPopularite(): ?int
-    {
-        return $this->popularite;
-    }
-
-    public function setPopularite(?int $popularite): self
-    {
-        $this->popularite = $popularite;
-
-        return $this;
-    }
-
-
-    public function getDateApparition(): ?\DateTimeInterface
-    {
-        return $this->Date_Apparition;
-    }
-
-
-    public function setDateApparition(?\DateTimeInterface $Date_Apparition): self
-    {
-        $this->Date_Apparition = $Date_Apparition;
-
-        return $this;
-    }
-
-    public function getIdCategorie(): ?Categorie
-    {
-        return $this->id_categorie;
-    }
-
-    public function setIdCategorie(?Categorie $id_categorie): self
-    {
-        $this->id_categorie = $id_categorie;
-
-        return $this;
+        $this->idvente = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
 }
